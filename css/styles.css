@@ -250,6 +250,11 @@ address {
 }
 
 /* Модалка */
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .backdrop {
     position: fixed;
     z-index: 1;
@@ -259,11 +264,6 @@ address {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity var(--transition-time) var(--timing-function);
-}
-
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
