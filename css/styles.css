@@ -258,6 +258,7 @@ address {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity var(--transition-time) var(--timing-function);
 }
 
 .backdrop.is-hidden {
